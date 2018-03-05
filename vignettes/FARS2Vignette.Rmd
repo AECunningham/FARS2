@@ -1,0 +1,33 @@
+---
+title: "FARS2 Vignette"
+author: "Anne Cunningham"
+date: "4 March 2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette demonstrating the use of the FARS2 package to analyse road fatalities}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(FARS2)
+```
+
+## The FARS2 package
+
+The FARS2 package has been written to let you analyse data on road fatalities from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System.
+
+As an end user, the only two functions you are likely to want to use are **fars_summarize_years** and **fars_map_state**.
+
+## fars_summarize_years
+This function needs to be supplied with a vector of years for which you have FARS data:
+```{r fars_summarize_years}
+fars_summarize_years(c(2013,2014))
+```
+
+## fars_map_state
+This function needs to be supplied with a valid state number and a year:
+```{r fars_map_state}
+fars_map_state(40,2013)
+```

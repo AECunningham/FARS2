@@ -1,0 +1,19 @@
+Package: FARS2
+Title: Analysis of FARS data on road fatalities
+Version: 1.1.0
+Authors@R: person("Anne", "Cunningham", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Summarises accidents per month for chosen year(s), 
+    or plots them for chosen state.
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: dplyr,
+    readr,
+    tidyr,
+    maps,
+    graphics,
+    magrittr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
