@@ -4,7 +4,7 @@ Version: 1.1.0
 Authors@R: person("Anne", "Cunningham", email = "first.last@example.com", role = c("aut", "cre"))
 Description: Summarises accidents per month for chosen year(s), 
     or plots them for chosen state.
-Depends: R (>= 3.4.1)
+Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
